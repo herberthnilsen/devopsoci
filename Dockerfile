@@ -2,6 +2,8 @@ FROM node:latest
 
 COPY . .
 
-RUN "npm install"
+RUN npm install
 
-CMD [ "node /src/app.js" ]
+EXPOSE 8080:8080
+
+CMD [ "node", "./src/app.js" ]

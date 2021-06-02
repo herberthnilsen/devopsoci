@@ -4,14 +4,22 @@
   "description": "",
   "main": "./src/app.js",
   "scripts": {
-    "dev" : "node ./src/app.js",
+    "dev": "node ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@mysql/xdevapi": "8.0.21",
+    "body-parser": "^1.19.0",
     "express": "4.17.1",
     "mysql": "2.18.1",
-    "oci-streaming": "1.5.1"
+    "mysql2": "^2.1.0",
+    "oci-streaming": "1.5.1",
+    "zipkin": "^0.22.0",
+    "zipkin-context-cls": "^0.22.0",
+    "zipkin-instrumentation-express": "^0.22.0",
+    "zipkin-instrumentation-fetch": "^0.22.0",
+    "zipkin-transport-http": "^0.22.0"
   }
 }
